@@ -1,0 +1,109 @@
+--create table person (
+-- id SERIAL, name varchar(50), age int, height float, city varchar(30), favorite_color varchar(20) );
+
+--insert into person (name, age, height, city, favorite_color) 
+--values ('Grant', '22', '167', 'dallas', 'red');
+
+--insert into person (name, age, height, city, favorite_color) 
+--values ('John', '30', '180', 'austin', 'green');
+
+--insert into person (name, age, height, city, favorite_color) 
+--values ('Matt', '25', '200', 'dallas', 'purple');
+
+--insert into person (name, age, height, city, favorite_color) 
+--values ('Elliot', '23', '177', 'houston', 'blue');
+
+--insert into person (name, age, height, city, favorite_color) 
+--values ('Mason', '24', '190', 'salt lake city', 'red');
+
+--select * from person order by height desc;
+
+--select * from person order by height;
+
+--select * from person order by age desc;
+
+--select * from person where age > 20;
+
+--select * from person where age = 18;
+
+--select * from person where age > 30 or age < 20;
+
+--select * from person where age != 27;
+
+--select * from person where favorite_color != 'red';
+
+--select * from person where favorite_color != 'red' and favorite_color != 'blue';
+
+--select * from person where favorite_color = 'green' or favorite_color = 'orange';
+
+--select * from person where favorite_color in ('orange', 'green', 'blue');
+
+--select * from person where favorite_color in ('yellow', 'purple');
+
+--create table orders (order_id serial, person_id int, product_name varchar(60), produce_price float, quantity int);
+
+--insert into orders (person_id, product_name, produce_price, quantity)
+--values(1, 'car', 20000, 1);
+ 
+--insert into orders (person_id, product_name, produce_price, quantity)
+--values(3, 'widget', 1, 100); 
+ 
+--insert into orders (person_id, product_name, produce_price, quantity)
+--values(1, 'pizza', 10, 2); 
+ 
+--insert into orders (person_id, product_name, produce_price, quantity)
+--values(4, 'box', 10, 1);
+ 
+--insert into orders (person_id, product_name, produce_price, quantity)
+--values(5, 'bike', 100, 3);
+
+--select * from orders;
+  
+--select sum(quantity) from orders;
+
+--select sum(quantity * produce_price) from orders;
+
+--select sum(quantity * produce_price) from orders where person_id = 1;
+
+--insert into artist (name)
+--values('Grant');
+
+--insert into artist (name)
+--values('Cake');
+
+--insert into artist (name)
+--values('St. Vincent');
+
+--select * from artist order by name desc limit 10;
+
+--select * from artist order by name limit 5;
+
+--select * from artist where name like 'Black%';
+
+--select * from artist where name like '%Black%';
+
+--select first_name, last_name from employee where city='Calgary';
+
+--select birth_date from employee order by birth_date desc limit 1;
+
+--select birth_date from employee order by birth_date limit 1;
+
+--select * from employee where reports_to=2;
+
+--select count(*) from employee where city='Lethbridge';
+
+--select count(*) from invoice where billing_country='USA';
+
+--select * from invoice order by total desc limit 1;
+
+--select * from invoice order by total limit 1;
+
+--select * from invoice where total > 5;
+
+--select count(*) from invoice where total <5;
+
+--select count(*) from invoice where billing_state in ('CA', 'TX', 'AZ');
+
+--select avg(total) from invoice;
+
+--select sum(total) from invoice;
